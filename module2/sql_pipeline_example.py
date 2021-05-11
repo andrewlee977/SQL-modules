@@ -4,10 +4,10 @@ import psycopg2 as pg2
 from query import EXTRACT_CHARACTERS, CREATE_characterscreator_character, INSERT_INTO_charactercreator_character
 
 
-DBNAME = "nthytbho"
-USER = "nthytbho"
-PASSWORD = "omt-EaxOcP5k7QUK0hTvXbTalVaeFNdn"
-HOST = "queenie.db.elephantsql.com"
+DBNAME = "?"
+USER = "?"
+PASSWORD = "?"
+HOST = "?"
 
 
 # We want to move charactercreator_character from sqlite -> postgresql
