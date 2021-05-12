@@ -9,7 +9,6 @@ USER = "wnphosbi"
 PASSWORD = "NlMaJqzK0DRgjdU7aNdroiaEmXONFPOU"
 HOST = "queenie.db.elephantsql.com"
 
-
 # We want to move charactercreator_character from sqlite -> postgresql
 def create_connections(dbname, user, password, host, sqlite_db="../data/rpg_db.sqlite3"):
     """Creates a connection to sqlite and postgresql"""
