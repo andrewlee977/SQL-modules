@@ -1,7 +1,11 @@
 # PostGreSQL queries
 
 
+<<<<<<< HEAD
 # SQLite queries - for sql_pipeline_example.py
+=======
+# SQLite queries
+>>>>>>> 87feb7f35388249260c813b9a7e82c4701ea92e4
 EXTRACT_CHARACTERS = """
   SELECT *
   FROM charactercreator_character;
@@ -46,7 +50,11 @@ INSERT_INTO_charactercreator_character = """
 """
 
 
+<<<<<<< HEAD
 # For postgresql_example.py
+=======
+# For Postgresl_example.py
+>>>>>>> 87feb7f35388249260c813b9a7e82c4701ea92e4
 SQL_CREATE_TABLE = """
   CREATE TABLE IF NOT EXISTS test_table (
     id SERIAL PRIMARY KEY,

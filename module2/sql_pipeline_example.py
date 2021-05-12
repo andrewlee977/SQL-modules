@@ -4,10 +4,18 @@ import psycopg2 as pg2
 from query import EXTRACT_CHARACTERS, CREATE_characterscreator_character, INSERT_INTO_charactercreator_character
 
 
+<<<<<<< HEAD
 DBNAME = "wnphosbi"
 USER = "wnphosbi"
 PASSWORD = "NlMaJqzK0DRgjdU7aNdroiaEmXONFPOU"
 HOST = "queenie.db.elephantsql.com"
+=======
+DBNAME = "?"
+USER = "?"
+PASSWORD = "?"
+HOST = "?"
+
+>>>>>>> 87feb7f35388249260c813b9a7e82c4701ea92e4
 
 # We want to move charactercreator_character from sqlite -> postgresql
 def create_connections(dbname, user, password, host, sqlite_db="../data/rpg_db.sqlite3"):

@@ -2,10 +2,17 @@
 import psycopg2 as pg2
 from query import SQL_INSERT_DATA, SQL_CREATE_TABLE, SQL_SHOW_TABLE
 
+<<<<<<< HEAD
 DBNAME = "wnphosbi"
 USER = "wnphosbi"
 PASSWORD = "NlMaJqzK0DRgjdU7aNdroiaEmXONFPOU"
 HOST = "queenie.db.elephantsql.com"
+=======
+DBNAME = "?"
+USER = "?"
+PASSWORD = "?"
+HOST = "?"
+>>>>>>> 87feb7f35388249260c813b9a7e82c4701ea92e4
 
 
 def create_connection(dbname, user, password, host):
