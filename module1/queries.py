@@ -6,7 +6,7 @@ TOTAL_CHARACTERS = 'SELECT COUNT(DISTINCT(name)) FROM charactercreator_character
 
 TOTAL_SUBCLASS = 'SELECT * FROM charactercreator_necromancer;'
 
-TOTAL_ITEMS = 'SELECT COUNT(*) FROM armory_item;'
+TOTAL_ITEMS = 'SELECT COUNT(DISTINCT(name)) FROM armory_item;'
 
 WEAPONS = 'SELECT COUNT(*) FROM armory_weapon;'
 
@@ -15,9 +15,11 @@ NON_WEAPONS = """SELECT COUNT(*)
                 LEFT OUTER JOIN armory_weapon as aw
                 ON ai.item_id = aw.item_ptr_id"""
 
-CHARACTER_ITEMS = """SELECT character_id, COUNT(*) AS num_items
-                  FROM charactercreator_character_inventory GROUP BY character_id 
-                  ORDER BY num_items DESC LIMIT 20;"""
+CHARACTER_ITEMS = """SELECT character_id, COUNT(item_id) AS num_items
+                    FROM charactercreator_character_inventory
+                    GROUP BY character_id
+                    LIMIT 20;
+                    """
 
 CHARACTER_WEAPONS = """SELECT name, COUNT(*) as num_weapons
                     FROM
